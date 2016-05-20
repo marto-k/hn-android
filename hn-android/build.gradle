@@ -13,8 +13,8 @@ apply plugin: 'android-apt'
 dependencies {
     apt "org.androidannotations:androidannotations:3.2"
     compile "org.androidannotations:androidannotations-api:3.2"
-    compile 'com.android.support:appcompat-v7:18.0.+'
-    compile 'com.android.support:support-v4:21.0.+'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:support-v4:23.3.0'
 
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
@@ -58,7 +58,14 @@ android {
             keyPassword props.keyAliasPassword
         }
     }
-
+    signingConfigs {
+        debug {
+            storeFile file("my-keystore-file.jks")
+            storePassword "my-password"
+            keyAlias "my-alias"
+            keyPassword "my-password"
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
