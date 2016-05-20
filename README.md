@@ -1,5 +1,4 @@
 HN (Android)
-============
 
 This is the official repo for **HN**, an unofficial Hacker News client for Android, built for reliability and usability.  
 [Download the app here: https://play.google.com/store/apps/details?id=com.manuelmaly.hn](https://play.google.com/store/apps/details?id=com.manuelmaly.hn) and read the [introductory blog post](http://manuelmaly.com/blog/HN-Hacker-News-Reader/).
